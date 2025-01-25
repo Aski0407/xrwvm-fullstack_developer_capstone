@@ -1,15 +1,102 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="/static/style.css">
-  <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealerships</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #00bcd4;
+            color: white;
+            padding: 10px;
+            position: relative;
+        }
+        header .title {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 50px);
+            background-color: #f9f9f9;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            max-width: 90%;
+            width: 90%;
+            height: 80%;
+        }
+        .card img {
+            width: 40%;
+            height: 100%;
+            border-radius: 10px;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+        .card .info {
+            flex: 1;
+        }
+        .card .info .icon {
+            font-size: 50px;
+            color: #00bcd4;
+            margin-bottom: 10px;
+        }
+        .card .info p {
+            margin: 5px 0;
+            color: #333;
+        }
+        .card .info p a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+    </style>
 </head>
-
-
-
-
-
-
-
-
-
+<body>
+    <header>
+        <div class="title">Dealership</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="card">
+            <img src="https://t4.ftcdn.net/jpg/02/13/53/89/360_F_213538901_jlnByKPTI2kSvtZmVVm8SvgxxB5jXVV6.jpg" alt="Dealership image">
+            <div class="info">
+                <div class="icon">&#128222;</div>
+                <p>Contact Customer Service: <a href="mailto:support@bestcars.com">support@bestcars.com</a></p>
+                <p>National Advertising: <a href="mailto:nationalSales@bestcars.com">nationalSales@bestcars.com</a></p>
+                <p>Public Relations: <a href="mailto:pr@bestcars.com">pr@bestcars.com</a></p>
+                <p>Call us: 312-611-1111</p>
+                <p>Join us: <a href="https://growwithbestcars.com">Visit growwithbestcars.com</a></p>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
