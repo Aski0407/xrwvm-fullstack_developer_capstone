@@ -4,12 +4,6 @@ from django.db import models
 from django.utils.timezone import now
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.contrib import admin
-from .models import CarMake, CarModel
-
-# Registering models with their respective admins
-admin.site.register(CarMake)
-admin.site.register(CarModel)
-
 
 # Create your models here.
 
@@ -52,3 +46,4 @@ class CarModel(models.Model):
         ])
     def __str__(self):
         return self.name 
+
