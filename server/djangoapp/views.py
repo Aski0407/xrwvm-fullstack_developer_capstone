@@ -60,7 +60,7 @@ def registration(request):
     first_name = data["firstName"]
     last_name = data["lastName"]
     email = data["email"]
-    #username_exist = False
+    username_exist = False
     email_exist = False
     try:
         # Check if user already exists
